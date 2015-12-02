@@ -77,6 +77,7 @@ module.exports = function (opts, cb) {
 				throw e;
 			}
 			debug("os dump", os);
+			console.log(os);
 			if ( /ubuntu/i.test(os.dist) ) {
 				name += "-ubuntu";
 				if ( os.release == "14.04" ) {
